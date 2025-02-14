@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -31,13 +32,17 @@ p {
     margin-top: 20px;
 }
 
-.decoracao img {
-    width: 50px;
-    margin: 10px;
-    animation: girar 4s infinite linear;
+/* Área cheia de corações */
+.decoracao {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-@keyframes girar {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+.coracao {
+    width: 40px;
+    margin: 5px;
+    opacity: 0.8;
 }
+
